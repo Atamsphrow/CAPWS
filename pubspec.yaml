@@ -1,0 +1,26 @@
+name: capws
+description: "CAPWS - Change App Permissions with Shizuku."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Reads the Android 12+ system palette so the UI follows Material You.
+  dynamic_color: ^1.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    # Downscaled from the 3.6 MB original: 768x1024 is plenty for the pinch-zoom
+    # viewer and keeps the APK small.
+    - assets/owner.jpg

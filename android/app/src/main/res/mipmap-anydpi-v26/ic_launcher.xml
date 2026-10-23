@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Diagonal gradient sampled from the source tile (#5B5AC8 -> #1C2745). A bitmap
+         rather than a flat colour, so the icon keeps the depth of the original artwork
+         once the launcher masks it. -->
+    <background android:drawable="@mipmap/ic_launcher_background" />
+    <!-- Only the cyan shield, cut out of the tile. Keeping the artwork's own frame
+         here would put a frame inside the launcher's frame, and the mask would crop
+         its corners. -->
+    <foreground android:drawable="@mipmap/ic_launcher_foreground" />
+    <!-- Lets Android 13+ recolour the icon with the user's wallpaper palette
+         (themed icons). Without this layer the launcher keeps the full-colour tile
+         while every other icon follows the theme. -->
+    <monochrome android:drawable="@mipmap/ic_launcher_monochrome" />
+</adaptive-icon>
